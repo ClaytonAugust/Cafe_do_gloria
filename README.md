@@ -4,9 +4,9 @@ Sobre: Café do Glória - Um site sobre uma cafeteria fictícia, visando aperfei
 Recursos utilizados: HTML, CSS, JavaScript e PHP.
 
 Colaboradores: 
-  Clayton Augusto
-  Vitor Diaz
-  Mateus Glória
-  Natan Ayres
-  Gabriel Gonzaga
+  Clayton Augusto,
+  Vitor Diaz,
+  Mateus Glória,
+  Natan Ayres,
+  Gabriel Gonzaga.
   
