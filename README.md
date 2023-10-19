@@ -1,7 +1,7 @@
 # Cafe_do_gloria
 Sobre: Café do Glória - Um site sobre uma cafeteria fictícia, visando aperfeiçoar nossos conhecimentos em programação Web
 
-Recursos utilizados: HTML, CSS, JavaScript, PHP, Apache, MySQL.
+Recursos utilizados: HTML, CSS, JavaScript, PHP, Apache, MySQL, SGBD=phpMyAdmin.
 
 Colaboradores: 
   Clayton Augusto,
