@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cafeteria.css">
-    <title>Document</title>
+    <title>café do glóóórria</title>
 </head>
 <body>
 
@@ -40,5 +39,6 @@
         <section class="latte"><img src="" alt=""></section>
         <section class="latte"><img src="" alt=""></section>
     </div><!-- latte -->
+
 </body>
 </html>
