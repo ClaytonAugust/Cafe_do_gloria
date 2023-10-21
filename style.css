@@ -1,1 +1,16 @@
-a
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(218, 212, 205);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    @font-face {
+        font-family: cartoon-free.regular;
+        src: url('cartoon-free.regular(1).otf') format('opentype'),
+         url:;
+    };
+}
