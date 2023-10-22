@@ -1,143 +1,163 @@
-
-body{
-    background-color: rgb(218, 212, 205);
-    background-size: cover;
-    background-position: center;
-    font-family: 'Playpen Sans', cursive;
-}
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-/* Estilos para o cabeçalho (header) */
-header {
+header{
     width: 100%;
-    background-color: rgb(0, 102, 0);
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}  
+
+body{
+
+background-color: #ac9a80bb;
+
+}
+
+/*==LOGO==*/
+.conteiner-logo{
+    background-color:#412d19;
+    display: flex;
     padding: 10px 0;
+    margin-block:0;
+    width:100%;
+}
+.logo-imagem{
+    max-width:200px;
+    max-height:150px;
+    margin-left: 15px;
+    width: auto;
+    height: auto;
+
 }
 
-@media (max-width: 952px) {
-    .menu{
-        display: block
-    }
+/*MENU*/
+.menu{
+    background-color: #213d1e;
+    width: 100%;
 }
+.menu ul{
 
-/* Estilos para o logotipo (logo-image) */
-.logo-image {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border-radius: 50px;
+    width: 100%;
+    height: 90px;
+
 }
-
-/* Estilos para o contêiner do logotipo (container-logo) */
-.container-logo {
-    display: flex;
-    align-items: center;
+.menu li{
+    display: inline-block;
+    margin:30px ;
 }
-
-/* Estilos para o texto do logotipo (logo-text) */
-.logo-text {
-    margin-left: 20px;
-    color: white; /* Adicionei uma cor ao texto do logotipo */
-}
-
-/* Estilos para a lista de menu (menu) */
-.menu {
-    list-style-type: none; /* Removi os marcadores da lista */
-    display: flexbox;
-    background: rgb(38, 160, 38);
-    text-align: center;
+.menu li a{
+    font-size: 24px;
     text-decoration: none;
-    position:inherit;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 15px;
 }
-/*Estilizando as listas do menu*/
-.menu ul{ 
+.menu li a:hover{
+    background-color: #ffffff36;
+}
+
+
+/*==CARROSSEL==*/
+.conteiner-carrossel{
+    width:auto;
+    height: 350px;
+    background-color: #213d1e;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 10px 20px;
+    border-radius: 25px;
+}
+
+/*==BUSCA==*/
+#Busca{
+    width: 430px;
+    height:64px;
     display: inline-flex;
-    list-style: none;
-    color: #fff;
-}
-.menu ul li{
-    width: 125px;
-    margin: 25px;
-    padding: 10px;
-}
-.menu ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-/* Estilos para os links do menu ao passar o mouse (menu li a:hover) */
-.active, .menu ul li:hover{
-    background: chartreuse;
-    border-radius: 3px;
-    
-}
-.menu .fa{ 
-    margin-right: 8px;
-}
-.sub-menu-1{
-    display: none;
-}
-/*Estilos da parte do submenu*/
-.menu ul li:hover .sub-menu-1{ 
-    display: flex;
-    position: absolute;
-    background: rgb(0,100,0);
-    margin-top: 10px;
-    margin-left: -15px;
+    margin: 20px 0px;
+} 
+
+#txtBusca{
+    padding: 0%;
+    border: solid 3px;
+    border-color: black;
+    background-color:#412d19;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    color: #f5f5dcab;
+    border-radius: 30px;
+    height:64px;
+    width:320px;
 }
 
-.menu ul li:hover .sub-menu-1 ul{
-    display: block;
-    margin: 10px;
+#btnBusca{
+    padding: 0%;
+    cursor:pointer;
+    height: 30px;
+    width: 30px;
 }
-.menu ul li:hover .sub-menu-1 ul li{
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px dotted #fff;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
-}
-.menu ul li:hover .sub-menu-1 ul li:last-child{
-    border-bottom: none;
-}
-.menu ul li:hover .sub-menu-1 ul li a:hover{
-    color: #b2ff00;
-}
-/* Estilos para o contêiner do expresso (container-espresso) */
-.container-espresso {
+
+/*==EXPRESSO==*/
+.conteiner-expresso{
     display: flex;
+    gap: 100px;
+    justify-content: space-around;
     justify-content: center;
-    margin: 10px 0; /* Ajustei a margem para centralizar */
+    margin: 10px 20px;
+    margin-bottom: 20px;
 }
-
-/* Estilos para os elementos do expresso (expresso) */
-.expresso {
+.expresso{
     width: 500px;
     height: 350px;
-    background-color: rgb(0, 102, 0);
+    background-color: #213d1e;
     border-radius: 25px;
-    margin: 0 10px; /* Adicionei uma margem entre os elementos */
 }
-
-/* Estilos para o contêiner do latté (container-latte) */
-.container-latte {
+/*==LATTÉ==*/
+.conteiner-latté{
     display: flex;
+    gap: 100px;
+    justify-content: space-around;
     justify-content: center;
-    margin: 10px 0; /* Ajustei a margem para centralizar */
+    margin: 10px 20px;
+    margin-bottom: 20px;
 }
-
-/* Estilos para os elementos do latté (latte) */
-.latte {
+.latté{
     width: 500px;
     height: 350px;
-    background-color: rgb(0, 102, 0);
+    background-color: #213d1e;
     border-radius: 25px;
-    margin: 0 10px; /* Adicionei uma margem entre os elementos */
+}
+
+/*==MOCHA==*/
+.conteiner-mocha{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+.mocha{
+    width: 500px;
+    height: 350px;
+    background-color: #213d1e;
+    border-radius: 25px;
+}
+/*==ESPECIAIS==*/
+.conteiner-especiais{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+.especiais{
+    width: 500px;
+    height: 350px;
+    background-color: #213d1e;
+    border-radius: 25px;
 }
