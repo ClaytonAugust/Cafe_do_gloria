@@ -1,53 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>café do glóóórria</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="cafeteria.css">
+    <title>Document</title>
 </head>
 <body>
 
     <header>
-        <div class="container-logo">
-            <div class="logo-image"></div>
-            <div class="logo-text"></div>
-            <h1>logotipo</h1>
-        </div><!-- container logo -->
+
+        <div class="conteiner-logo">
+            <div>
+                <img class="logo-imagem" src="CDG.png" alt="Cafés do Glória">
+            </div>
+        </div><!-- conteiner logo -->
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">espresso</a></li>
+                <li><a href="#">latté</a></li>
+                <li><a href="#">mocha</a></li>
+                <li><a href="#">especiais</a></li>
+                <li><a href="#">promoções</a></li>
+            </ul>
+        </div><!-- menu -->
     </header>
 
-    <div class="menu">
-        <ul>
-            <li class="active"><a href="#"><img src="./image/casa.png", class="fa">Home</a></li>
-            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Latté</a></li>
-            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Mocha</a></li>
-            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Especiais</a></li>
-            <li><a href="#"><img src="./image/shopping-cart.png", class="fa">Compras</a>
-                <div class="sub-menu-1">
-                    <ul>
-                        <li><a href="#">Cafés em promoção</li>
-                        <li><a href="#">Carrinho</a></li>
-                        <li><a href="#">Em breve</a></li>
-                    </ul>
-                </div>
-        </li>
-            <li><a href="#"><img src="./image/enter.png", class="fa">Login</a></li>
-        </ul>
-    </div><!-- menu -->
+    <div class="conteiner-carrossel">
+        <section class="carrossel"></section>
+    </div>
 
-    <div class="container-espresso">
-        <section class="espresso"><img src="" alt=""></section>
-        <section class="espresso"><img src="" alt=""></section>
-        <section class="espresso"><img src="" alt=""></section>
-        <section class="espresso"><img src="" alt=""></section>
-    </div><!-- espresso -->
-    
-    <div class="container-latte">
-        <section class="latte"><img src="" alt=""></section>
-        <section class="latte"><img src="" alt=""></section>
-        <section class="latte"><img src="" alt=""></section>
-        <section class="latte"><img src="" alt=""></section>
-    </div><!-- latte -->
+    <div id="Busca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <img src="lupa.png" id="btnBusca" alt="Buscar"/>
+    </div>
+      
+        <h1>EXPRESSO</h1>
+
+        <div class="conteiner-expresso">   
+        <section class="expresso"><img src="" alt=""></section>
+        <section class="expresso"><img scr="" alt=""></section>
+        <section class="expresso"><img scr="" alt=""></section>
+        <section class="expresso"><img scr="" alt=""></section>    
+    </div><!--expresso-->
+
+        <h1>LATTÉ</h1>
+
+    <div class="conteiner-latté">
+        <section class="latté"><img src="" alt=""></section>
+        <section class="latté"><img src="" alt=""></section>
+        <section class="latté"><img src="" alt=""></section>
+        <section class="latté"><img src="" alt=""></section>
+    </div><!--latté-->
+
+        <h1>MOCHA</h1>
+
+    <div class="conteiner-mocha">
+        <section class="mocha"><img src="" alt=""></section>
+        <section class="mocha"><img src="" alt=""></section>
+        <section class="mocha"><img src="" alt=""></section>
+        <section class="mocha"><img src="" alt=""></section>
+    </div><!--mocha-->
+
+        <h1>ESPECIAIS</h1>
+
+    <div class="conteiner-especiais">
+        <section class="especiais"><img src="" alt=""></section>
+        <section class="especiais"><img src="" alt=""></section>
+        <section class="especiais"><img src="" alt=""></section>
+        <section class="especiais"><img src="" alt=""></section>
+    </div><!--especiais-->
 
 </body>
 </html>
