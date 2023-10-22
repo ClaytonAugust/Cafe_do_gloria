@@ -3,12 +3,7 @@ body{
     background-color: rgb(218, 212, 205);
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
-    @font-face {
-        font-family: cartoon-free.regular;
-        src: url('cartoon-free.regular(1).otf') format('opentype'),
-         url:;
-    };
+    font-family: 'Playpen Sans', cursive;
 }
 * {
     padding: 0;
@@ -26,12 +21,18 @@ header {
     padding: 10px 0;
 }
 
+@media (max-width: 952px) {
+    .menu{
+        display: block
+    }
+}
+
 /* Estilos para o logotipo (logo-image) */
 .logo-image {
     width: 50px;
     height: 50px;
     background-color: black;
-    border-radius: 25px;
+    border-radius: 50px;
 }
 
 /* Estilos para o contêiner do logotipo (container-logo) */
@@ -49,29 +50,66 @@ header {
 /* Estilos para a lista de menu (menu) */
 .menu {
     list-style-type: none; /* Removi os marcadores da lista */
-    display: flex;
-}
-
-/* Estilos para os itens do menu (menu li) */
-.menu li {
-    margin: 0 10px;
-}
-
-/* Estilos para os links do menu (menu li a) */
-.menu li a {
-    font-size: 24px;
+    display: flexbox;
+    background: rgb(38, 160, 38);
+    text-align: center;
     text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    border-radius: 15px;
+    position:inherit;
 }
-
+/*Estilizando as listas do menu*/
+.menu ul{ 
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu ul li{
+    width: 125px;
+    margin: 25px;
+    padding: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
 /* Estilos para os links do menu ao passar o mouse (menu li a:hover) */
-.menu li a:hover {
-    background-color: chartreuse;
+.active, .menu ul li:hover{
+    background: chartreuse;
+    border-radius: 3px;
+    
+}
+.menu .fa{ 
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+/*Estilos da parte do submenu*/
+.menu ul li:hover .sub-menu-1{ 
+    display: flex;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 10px;
+    margin-left: -15px;
 }
 
+.menu ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
 /* Estilos para o contêiner do expresso (container-espresso) */
 .container-espresso {
     display: flex;

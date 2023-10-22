@@ -14,17 +14,26 @@
             <div class="logo-text"></div>
             <h1>logotipo</h1>
         </div><!-- container logo -->
-
-        <div class="menu">
-            <ul>
-                <li><a href="#">espresso</a></li>
-                <li><a href="#">latté</a></li>
-                <li><a href="#">mocha</a></li>
-                <li><a href="#">especiais</a></li>
-                <li><a href="#">promoções</a></li>
-            </ul>
-        </div><!-- menu -->
     </header>
+
+    <div class="menu">
+        <ul>
+            <li class="active"><a href="#"><img src="./image/casa.png", class="fa">Home</a></li>
+            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Latté</a></li>
+            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Mocha</a></li>
+            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Especiais</a></li>
+            <li><a href="#"><img src="./image/shopping-cart.png", class="fa">Compras</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Cafés em promoção</li>
+                        <li><a href="#">Carrinho</a></li>
+                        <li><a href="#">Em breve</a></li>
+                    </ul>
+                </div>
+        </li>
+            <li><a href="#"><img src="./image/enter.png", class="fa">Login</a></li>
+        </ul>
+    </div><!-- menu -->
 
     <div class="container-espresso">
         <section class="espresso"><img src="" alt=""></section>
