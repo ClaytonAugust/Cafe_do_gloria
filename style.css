@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(218, 212, 205);
+    background-color:#ac9a80bb;
     background-size: cover;
     background-position: center;
     font-family: 'Playpen Sans', cursive;
@@ -14,31 +14,28 @@ body{
 /* Estilos para o cabeçalho (header) */
 header {
     width: 100%;
-    background-color: rgb(0, 102, 0);
+    background-color: rgb(15, 83, 15);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 0;
 }
-
-@media (max-width: 952px) {
-    .menu{
-        display: block
-    }
-}
-
 /* Estilos para o logotipo (logo-image) */
 .logo-image {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border-radius: 50px;
+    max-width:200px;
+    max-height:150px;
+    margin-left: 15px;
+    width: auto;
+    height: auto;
 }
 
 /* Estilos para o contêiner do logotipo (container-logo) */
 .container-logo {
+    background-color:#412d19;
     display: flex;
-    align-items: center;
+    padding: 10px 0;
+    margin-block:0;
+    width:100%;
 }
 
 /* Estilos para o texto do logotipo (logo-text) */
@@ -51,7 +48,7 @@ header {
 .menu {
     list-style-type: none; /* Removi os marcadores da lista */
     display: flexbox;
-    background: rgb(38, 160, 38);
+    background: #213d1e;
     text-align: center;
     text-decoration: none;
     position:inherit;
@@ -73,7 +70,7 @@ header {
 }
 /* Estilos para os links do menu ao passar o mouse (menu li a:hover) */
 .active, .menu ul li:hover{
-    background: chartreuse;
+    background: #ffffff36;
     border-radius: 3px;
     
 }
@@ -87,7 +84,7 @@ header {
 .menu ul li:hover .sub-menu-1{ 
     display: flex;
     position: absolute;
-    background: rgb(0,100,0);
+    background: #2c5228;
     margin-top: 10px;
     margin-left: -15px;
 }
@@ -108,36 +105,114 @@ header {
     border-bottom: none;
 }
 .menu ul li:hover .sub-menu-1 ul li a:hover{
-    color: #b2ff00;
+    color: #ffffff36;
 }
-/* Estilos para o contêiner do expresso (container-espresso) */
-.container-espresso {
-    display: flex;
+/*==CARROSSEL==*/
+.conteiner-carrossel{
+    width:auto;
+    height: 350px;
+    background-color: #213d1e;
+    justify-content: space-around;
     justify-content: center;
-    margin: 10px 0; /* Ajustei a margem para centralizar */
+    margin: 10px 20px;
+    border-radius: 25px;
+    margin-top: 30px;
 }
 
-/* Estilos para os elementos do expresso (expresso) */
-.expresso {
+/*==BUSCA==*/
+#Busca{
+    width: 430px;
+    height:64px;
+    display: inline-flex;
+    margin: 20px 0px;
+    margin-left: 20px;
+}
+
+#txtBusca{
+    padding: 0%;
+    border: solid 3px;
+    border-color: black;
+    background-color:#412d19;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    color: #f5f5dcab;
+    border-radius: 30px;
+    height:64px;
+    width:320px;
+}
+
+#btnBusca{
+    padding: 0%;
+    cursor:pointer;
+    height: 30px;
+    width: 30px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+/*Arrumando a posição dos titulos*/
+.title-style{
+    margin-left: 20px;
+}
+
+/*==EXPRESSO==*/
+.conteiner-expresso{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+.expresso{
     width: 500px;
     height: 350px;
-    background-color: rgb(0, 102, 0);
+    background-color: #213d1e;
     border-radius: 25px;
-    margin: 0 10px; /* Adicionei uma margem entre os elementos */
 }
-
-/* Estilos para o contêiner do latté (container-latte) */
-.container-latte {
+/*==LATTÉ==*/
+.conteiner-latté{
     display: flex;
+    gap: 100px;
+    justify-content: space-around;
     justify-content: center;
-    margin: 10px 0; /* Ajustei a margem para centralizar */
+    margin: 10px 20px;
+    margin-bottom: 20px;
 }
-
-/* Estilos para os elementos do latté (latte) */
-.latte {
+.latté{
     width: 500px;
     height: 350px;
-    background-color: rgb(0, 102, 0);
+    background-color: #213d1e;
     border-radius: 25px;
-    margin: 0 10px; /* Adicionei uma margem entre os elementos */
+}
+
+/*==MOCHA==*/
+.conteiner-mocha{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+.mocha{
+    width: 500px;
+    height: 350px;
+    background-color: #213d1e;
+    border-radius: 25px;
+}
+/*==ESPECIAIS==*/
+.conteiner-especiais{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+.especiais{
+    width: 500px;
+    height: 350px;
+    background-color: #213d1e;
+    border-radius: 25px;
 }

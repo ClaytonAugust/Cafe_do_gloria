@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>café do glóóórria</title>
+    <title>café do glória</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
 
     <header>
         <div class="container-logo">
-            <div class="logo-image"></div>
-            <div class="logo-text"></div>
-            <h1>logotipo</h1>
+            <div>
+                <img class="logo-image" src="./image/CDG.png" alt="Cafés do Glória">
+            </div>
         </div><!-- container logo -->
     </header>
 
@@ -34,20 +35,60 @@
             <li><a href="#"><img src="./image/enter.png", class="fa">Login</a></li>
         </ul>
     </div><!-- menu -->
+    <!--Carrossel-->
+    <div class="conteiner-carrossel">
+    <section class="carrossel"></section>
+</div>
+    <!--Buscador-->
+<div id="Busca">
+    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+    <img src="./image/lupa.png" id="btnBusca" alt="Buscar"/>
+</div>
+    <!--expresso-->
+  <div class="title-style">
+      <h1>EXPRESSO</h1>
+  </div>
 
-    <div class="container-espresso">
-        <section class="espresso"><img src="" alt=""></section>
-        <section class="espresso"><img src="" alt=""></section>
-        <section class="espresso"><img src="" alt=""></section>
-        <section class="espresso"><img src="" alt=""></section>
-    </div><!-- espresso -->
+    <div class="conteiner-expresso">   
+    <section class="expresso"><img src="" alt=""></section>
+    <section class="expresso"><img scr="" alt=""></section>
+    <section class="expresso"><img scr="" alt=""></section>
+    <section class="expresso"><img scr="" alt=""></section>    
+</div>
+    <!--latté-->
+    <div class="title-style">
+        <h1>LATTÉ</h1>
+    </div>
+
+<div class="conteiner-latté">
+    <section class="latté"><img src="" alt=""></section>
+    <section class="latté"><img src="" alt=""></section>
+    <section class="latté"><img src="" alt=""></section>
+    <section class="latté"><img src="" alt=""></section>
+</div>
+    <!--mocha-->
+    <div class="title-style">
+        <h1>MOCHA</h1>
+    </div>
     
-    <div class="container-latte">
-        <section class="latte"><img src="" alt=""></section>
-        <section class="latte"><img src="" alt=""></section>
-        <section class="latte"><img src="" alt=""></section>
-        <section class="latte"><img src="" alt=""></section>
-    </div><!-- latte -->
+<div class="conteiner-mocha">
+    <section class="mocha"><img src="" alt=""></section>
+    <section class="mocha"><img src="" alt=""></section>
+    <section class="mocha"><img src="" alt=""></section>
+    <section class="mocha"><img src="" alt=""></section>
+</div>
+    <!--especiais-->
+    <div class="title-style"> 
+        <h1>ESPECIAIS</h1>
+    </div>
+    
+
+<div class="conteiner-especiais">
+    <section class="especiais"><img src="" alt=""></section>
+    <section class="especiais"><img src="" alt=""></section>
+    <section class="especiais"><img src="" alt=""></section>
+    <section class="especiais"><img src="" alt=""></section>
+</div>
 
 </body>
 </html>
