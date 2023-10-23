@@ -36,14 +36,52 @@
         </ul>
     </div><!-- menu -->
     <!--Carrossel-->
-    <div class="conteiner-carrossel">
-    <section class="carrossel"></section>
-</div>
+    <div class="slider">
+        <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--Fim Radio Buttons-->
+
+            <!--Slide images-->
+            <div class="slide first">
+                <img src="./image/datos-sobre-el-cafe.png" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="./image/cafelindo.png" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="./image/datos-sobre-el-cafe.png" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="./image/xicara-de-cafe.png" alt="Imagem 4">
+            </div>
+            <!--Fim Slide images-->
+
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+
+            </div>
+        </div>
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+
+    </div>
     <!--Buscador-->
-<div id="Busca">
-    <input type="text" id="txtBusca" placeholder="Buscar..."/>
-    <img src="./image/lupa.png" id="btnBusca" alt="Buscar"/>
-</div>
+    <div id="Busca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <img src="./image/lupa.png" id="btnBusca" alt="Buscar"/>
+    </div>
     <!--expresso-->
   <div class="title-style">
       <h1>EXPRESSO</h1>
