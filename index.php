@@ -47,16 +47,16 @@
 
             <!--Slide images-->
             <div class="slide first">
-                <img src="./image/datos-sobre-el-cafe.png" alt="Imagem 1">
+                <img src="./image/datos-sobre-el-cafe.png" alt="Imagem 1"/>
             </div>
             <div class="slide">
-                <img src="./image/cafelindo.png" alt="Imagem 2">
+                <img src="./image/agua.png" alt="Imagem 2"/>
             </div>
             <div class="slide">
-                <img src="./image/datos-sobre-el-cafe.png" alt="Imagem 3">
+                <img src="./image/bonito.png" alt="Imagem 3"/>
             </div>
             <div class="slide">
-                <img src="./image/xicara-de-cafe.png" alt="Imagem 4">
+                <img src="./image/nãosei.png" alt="Imagem 4"/>
             </div>
             <!--Fim Slide images-->
 
