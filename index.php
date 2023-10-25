@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>café do glória</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    
 </head>
 <body>
 
@@ -127,6 +127,6 @@
     <section class="especiais"><img src="" alt=""></section>
     <section class="especiais"><img src="" alt=""></section>
 </div>
-
+    <script src="./script.js"></script>
 </body>
 </html>
