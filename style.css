@@ -1,93 +1,255 @@
+
+body{
+    background-color:#ac9a80bb;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Playpen Sans', cursive;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Estilos para o cabeçalho (header) */
-header {
+/*Estilo do header*/
+header{
     width: 100%;
-    background-color: rgb(0, 102, 0);
+    background-color: #50481e8f;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
+    justify-content: space-around;
 }
-
-/* Estilos para o logotipo (logo-image) */
-.logo-image {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border-radius: 25px;
-}
-
 /* Estilos para o contêiner do logotipo (container-logo) */
 .container-logo {
     display: flex;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-
-/* Estilos para o texto do logotipo (logo-text) */
-.logo-text {
+/* Estilos para o logotipo (logo-image) */
+.logo-imagem {
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+/*Estilos para o texto do logo*/
+.logo-texto{
+    margin-top: 35px;
     margin-left: 20px;
-    color: white; /* Adicionei uma cor ao texto do logotipo */
+    color:#fff;
 }
 
 /* Estilos para a lista de menu (menu) */
 .menu {
     list-style-type: none; /* Removi os marcadores da lista */
     display: flex;
-}
-
-/* Estilos para os itens do menu (menu li) */
-.menu li {
-    margin: 0 10px;
-}
-
-/* Estilos para os links do menu (menu li a) */
-.menu li a {
-    font-size: 24px;
+    background: #213d1e;
+    text-align: center;
     text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    border-radius: 15px;
+    justify-content: space-around;
 }
-
+/*Estilizando as listas do menu*/
+.menu ul{ 
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu ul li{
+    width: 125px;
+    margin: 25px;
+    padding: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
 /* Estilos para os links do menu ao passar o mouse (menu li a:hover) */
-.menu li a:hover {
-    background-color: chartreuse;
+.active, .menu ul li:hover{
+    background: #ffffff36;
+    border-radius: 3px;
+    
 }
-
-/* Estilos para o contêiner do expresso (container-espresso) */
-.container-espresso {
+.menu .fa{ 
+    margin-right: 8px;
+}
+/*==CARROSSEL==*/
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.slides{
+    width:400%;
+    height: 400px;
+    display: flex;
+}
+.slides input {
+    display: none;
+}
+.slide{
+    width: 25%;
+    position: relative;
+}
+.slide img{
+    width: 800px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -60px;
     display: flex;
     justify-content: center;
-    margin: 10px 0; /* Ajustei a margem para centralizar */
 }
-
-/* Estilos para os elementos do expresso (expresso) */
-.expresso {
-    width: 500px;
-    height: 350px;
-    background-color: rgb(0, 102, 0);
-    border-radius: 25px;
-    margin: 0 10px; /* Adicionei uma margem entre os elementos */
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
 }
-
-/* Estilos para o contêiner do latté (container-latte) */
-.container-latte {
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid #2c5228;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 340px;
     display: flex;
     justify-content: center;
-    margin: 10px 0; /* Ajustei a margem para centralizar */
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
 }
 
-/* Estilos para os elementos do latté (latte) */
-.latte {
+/*==BUSCA==*/
+#Busca{
+    width: 430px;
+    height:64px;
+    display: inline-flex;
+    margin: 20px 0px;
+    margin-left: 20px;
+}
+
+#txtBusca{
+    padding: 0%;
+    border: solid 3px;
+    border-color: black;
+    background-color:#412d19;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    color: #f5f5dcab;
+    border-radius: 30px;
+    height:64px;
+    width:320px;
+}
+
+#btnBusca{
+    padding: 0%;
+    cursor:pointer;
+    height: 30px;
+    width: 30px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+/*Arrumando a posição dos titulos*/
+.title-style{
+    margin-left: 20px;
+}
+
+/*==EXPRESSO==*/
+.conteiner-expresso{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+.expresso{
     width: 500px;
     height: 350px;
-    background-color: rgb(0, 102, 0);
+    background-color: #213d1e;
     border-radius: 25px;
-    margin: 0 10px; /* Adicionei uma margem entre os elementos */
+}
+/*==LATTÉ==*/
+.conteiner-latté{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+.latté{
+    width: 500px;
+    height: 350px;
+    background-color: #213d1e;
+    border-radius: 25px;
+}
+
+/*==MOCHA==*/
+.conteiner-mocha{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+.mocha{
+    width: 500px;
+    height: 350px;
+    background-color: #213d1e;
+    border-radius: 25px;
+}
+/*==ESPECIAIS==*/
+.conteiner-especiais{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    justify-content: center;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+.especiais{
+    width: 500px;
+    height: 350px;
+    background-color: #213d1e;
+    border-radius: 25px;
 }
