@@ -8,34 +8,33 @@
     
 </head>
 <body>
-
+    <!-- Começo container logo -->
     <header>
         <div class="container-logo">
-            <div>
-                <img class="logo-image" src="./image/CDG.png" alt="Cafés do Glória">
+            <div class="logo-imagem">
+                <img src="./image/CDG.png">
             </div>
-        </div><!-- container logo -->
+            <div class="logo-texto">
+                <h1>Café do Glória</h1>
+            </div>
+        </div>
     </header>
+    <!-- Fim container logo -->
 
+    <!-- Começo menu -->
     <div class="menu">
         <ul>
             <li class="active"><a href="#"><img src="./image/casa.png", class="fa">Home</a></li>
             <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Latté</a></li>
-            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Mocha</a></li>
+            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Registrar</a></li>
             <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Especiais</a></li>
-            <li><a href="#"><img src="./image/shopping-cart.png", class="fa">Compras</a>
-                <div class="sub-menu-1">
-                    <ul>
-                        <li><a href="#">Cafés em promoção</li>
-                        <li><a href="#">Carrinho</a></li>
-                        <li><a href="#">Em breve</a></li>
-                    </ul>
-                </div>
-        </li>
+            <li><a href="#"><img src="./image/shopping-cart.png", class="fa">Compras</a></li>
             <li><a href="#"><img src="./image/enter.png", class="fa">Login</a></li>
         </ul>
-    </div><!-- menu -->
-    <!--Carrossel-->
+    </div>
+    <!-- Fim menu -->
+
+    <!--Começo carrossel-->
     <div class="slider">
         <div class="slides">
             <!--Radio Buttons-->
@@ -75,8 +74,9 @@
             <label for="radio3" class="manual-btn"></label>
             <label for="radio4" class="manual-btn"></label>
         </div>
-
     </div>
+    <!--Fim carrossel-->
+
     <!--Buscador-->
     <div id="Busca">
         <input type="text" id="txtBusca" placeholder="Buscar..."/>

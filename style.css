@@ -11,47 +11,41 @@ body{
     box-sizing: border-box;
 }
 
-/* Estilos para o cabeçalho (header) */
-header {
+/*Estilo do header*/
+header{
     width: 100%;
-    background-color: rgb(15, 83, 15);
+    background-color: #50481e8f;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
 }
-/* Estilos para o logotipo (logo-image) */
-.logo-image {
-    max-width:200px;
-    max-height:150px;
-    margin-left: 15px;
-    width: auto;
-    height: auto;
-}
-
 /* Estilos para o contêiner do logotipo (container-logo) */
 .container-logo {
-    background-color:#412d19;
     display: flex;
-    padding: 10px 0;
-    margin-block:0;
-    width:100%;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-
-/* Estilos para o texto do logotipo (logo-text) */
-.logo-text {
+/* Estilos para o logotipo (logo-image) */
+.logo-imagem {
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+/*Estilos para o texto do logo*/
+.logo-texto{
+    margin-top: 35px;
     margin-left: 20px;
-    color: white; /* Adicionei uma cor ao texto do logotipo */
+    color:#fff;
 }
 
 /* Estilos para a lista de menu (menu) */
 .menu {
     list-style-type: none; /* Removi os marcadores da lista */
-    display: flexbox;
+    display: flex;
     background: #213d1e;
     text-align: center;
     text-decoration: none;
-    position:inherit;
+    justify-content: space-around;
 }
 /*Estilizando as listas do menu*/
 .menu ul{ 
@@ -76,36 +70,6 @@ header {
 }
 .menu .fa{ 
     margin-right: 8px;
-}
-.sub-menu-1{
-    display: none;
-}
-/*Estilos da parte do submenu*/
-.menu ul li:hover .sub-menu-1{ 
-    display: flex;
-    position: absolute;
-    background: #2c5228;
-    margin-top: 10px;
-    margin-left: -15px;
-}
-
-.menu ul li:hover .sub-menu-1 ul{
-    display: block;
-    margin: 10px;
-}
-.menu ul li:hover .sub-menu-1 ul li{
-    width: 150px;
-    padding: 10px;
-    border-bottom: 1px dotted #fff;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
-}
-.menu ul li:hover .sub-menu-1 ul li:last-child{
-    border-bottom: none;
-}
-.menu ul li:hover .sub-menu-1 ul li a:hover{
-    color: #ffffff36;
 }
 /*==CARROSSEL==*/
 .slider{
@@ -191,7 +155,6 @@ header {
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: #fff;
 }
-
 
 /*==BUSCA==*/
 #Busca{

@@ -1,4 +1,4 @@
-let count = 1;
+let count = 1; // Começo passar imagens do carrosel automático
 document.getElementById("radio1").checked = true;
 
 setInterval( function(){
@@ -11,5 +11,4 @@ function nextImage(){
         count = 1;
     }
     document.getElementById("radio"+count).checked = true;
-
-}
+}//  Fim passar imagens do carrosel automático
