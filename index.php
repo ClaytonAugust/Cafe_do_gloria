@@ -25,7 +25,7 @@
     <div class="menu">
         <ul>
             <li class="active"><a href="#"><img src="./image/casa.png", class="fa">Home</a></li>
-            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Latté</a></li>
+            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Contato</a></li>
             <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Registrar</a></li>
             <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Especiais</a></li>
             <li><a href="#"><img src="./image/shopping-cart.png", class="fa">Compras</a></li>
