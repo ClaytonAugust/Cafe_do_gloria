@@ -12,7 +12,7 @@
     <header>
         <div class="container-logo">
             <div class="logo-imagem">
-                <img src="./image/CDG.png">
+                <img src="./assets/img/CDG.png">
             </div>
             <div class="logo-texto">
                 <h1>Café do Glória</h1>
@@ -24,12 +24,12 @@
     <!-- Começo menu -->
     <div class="menu">
         <ul>
-            <li class="active"><a href="#"><img src="./image/casa.png", class="fa">Home</a></li>
-            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Contato</a></li>
-            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Registrar</a></li>
-            <li><a href="#"><img src="./image/xicara-de-cafe.png", class="fa">Sócios</a></li>
-            <li><a href="#"><img src="./image/shopping-cart.png", class="fa">Compras</a></li>
-            <li><a href="#"><img src="./image/enter.png", class="fa">Login</a></li>
+            <li class="active"><a href="#"><img src="./assets/img/casa.png", class="fa">Home</a></li>
+            <li><a href="#"><img src="./assets/img/xicara-de-cafe.png", class="fa">Contato</a></li>
+            <li><a href="#"><img src="./assets/img/xicara-de-cafe.png", class="fa">Registrar</a></li>
+            <li><a href="#"><img src="./assets/img/xicara-de-cafe.png", class="fa">Sócios</a></li>
+            <li><a href="#"><img src="./assets/img/shopping-cart.png", class="fa">Compras</a></li>
+            <li><a href="#"><img src="./assets/img/enter.png", class="fa">Login</a></li>
         </ul>
     </div>
     <!-- Fim menu -->
@@ -46,16 +46,16 @@
 
             <!--Slide images-->
             <div class="slide first">
-                <img src="./image/datos-sobre-el-cafe.png" alt="Imagem 1"/>
+                <img src="./assets/img/datos-sobre-el-cafe.png" alt="Imagem 1"/>
             </div>
             <div class="slide">
-                <img src="./image/agua.png" alt="Imagem 2"/>
+                <img src="./assets/img/agua.png" alt="Imagem 2"/>
             </div>
             <div class="slide">
-                <img src="./image/bonito.png" alt="Imagem 3"/>
+                <img src="./assets/img/bonito.png" alt="Imagem 3"/>
             </div>
             <div class="slide">
-                <img src="./image/nãosei.png" alt="Imagem 4"/>
+                <img src="./assets/img/nãosei.png" alt="Imagem 4"/>
             </div>
             <!--Fim Slide images-->
 
@@ -80,7 +80,7 @@
     <!--Buscador-->
     <div id="Busca">
         <input type="text" id="txtBusca" placeholder="Buscar..."/>
-        <img src="./image/lupa.png" id="btnBusca" alt="Buscar"/>
+        <img src="./assets/img/lupa.png" id="btnBusca" alt="Buscar"/>
     </div>
     <!--expresso-->
   <div class="title-style">
