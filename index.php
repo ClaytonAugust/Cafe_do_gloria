@@ -127,6 +127,26 @@
     <section class="especiais"><img src="" alt=""></section>
     <section class="especiais"><img src="" alt=""></section>
 </div>
+    <footer>
+        <div>
+            <div></div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a  href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a  href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a  href="#" class="footer-link">Music</a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
     <script src="./assets/script.js"></script>
 </body>
 </html>
