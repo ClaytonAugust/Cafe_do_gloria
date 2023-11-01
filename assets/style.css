@@ -10,13 +10,25 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
-
 /*Estilo do header*/
 header{
     width: 100%;
     background-color: #50481e8f;
     display: flex;
     justify-content: space-around;
+}
+/*Responsividade*/
+@media screen and (max-width: 768px){
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 426px){
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
 }
 /* Estilos para o contêiner do logotipo (container-logo) */
 .container-logo {
@@ -254,4 +266,86 @@ header{
     height: 350px;
     background-color: #213d1e;
     border-radius: 25px;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    color: #fff;
+}
+.footer-link{
+    text-decoration: none;
+}
+#footer_content{
+    background-color: #2c5228;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    padding: 3rem 3.5rem;
+}
+#footer_contacts{
+    margin-bottom: 0.75rem;
+}
+#footer_social_media{
+    display: flex;
+    gap: 1rem;
+    margin-top: 2px;
+}
+#footer_social_media img{
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: all 0.4s;
+}
+#footer_social_media img:hover{
+    opacity: 0.8;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.footer-list .footer-link{
+    color: #fff;
+    transition: all 0.4s;
+}
+.footer-list .footer-link:hover{
+    color: #412d19;  
+}
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#footer_subscribe p{
+    color: #fff;
+}
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: #412d19;
+    border-radius: 4px;
+}
+#input_group input{
+    all: unset;
+    padding: 5px;
+    width: 100%;
+}
+#input_group button{
+    background-color: #187e21;
+    border: none;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+#input_group button:hover{
+    opacity: 0.8;
+}
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #11220f;
+    font-size: 0.9rem;
+    padding: 1.5rem;
 }
