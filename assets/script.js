@@ -14,15 +14,20 @@ function nextImage(){
 }//  Fim passar imagens do carrosel automático
 
 //Começo do script do botão read more
-var button = document.getElementById('read_button');
+document.addEventListener('DOMContentLoaded', function() {
+    const lerMaisButtons = document.querySelectorAll('.ler-mais');
+    const cards = document.querySelectorAll('.card');
 
-button.addEventListener('click', function(){
-    var card = document.querySelector('.card');
-    card.classList.toggle('active');
-
-    if(card.classList.contains('active')){
-        return button.textContent = 'Read less';
-    }
-    button.textContent = 'Read less';
+    lerMaisButtons.forEach((button, index) => {
+        button.addEventListener('click', function() {
+            cards[index].classList.toggle('active');
+            if (cards[index].classList.contains('active')) {
+                button.textContent = 'Read less';
+            } else {
+                button.textContent = 'Ler Mais';
+            }
+        });
+    });
 });
+
 //Fim do script do botão read more

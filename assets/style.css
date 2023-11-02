@@ -274,7 +274,7 @@ header{
     color: #fff;
 }
 /*estilo do botão*/
-#read_button{
+.ler-mais{
     border: none;
     padding: 10px;
     border-radius: 2px;
@@ -286,7 +286,7 @@ header{
     font-size: 16px;
     transition: all 0.2s ease-in-out;
 }
-#read_button:hover{
+.ler-mais:hover{
     background: transparent;
     color: #06d62e;
     transition: all 0.2s ease-in-out;

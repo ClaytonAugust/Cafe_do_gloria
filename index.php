@@ -98,7 +98,7 @@
                 quae, nisi recusandae voluptate accusantium.
             </p>
         </div>
-        <button id="read_button">Read more</button>   
+        <button class="ler-mais">Ler mais</button>   
     </div>
 
     <div class="card"> 
@@ -112,7 +112,7 @@
                 quae, nisi recusandae voluptate accusantium.
             </p>
         </div>
-        <button id="read_button">Read more</button>   
+        <button class="ler-mais">Ler mais</button>   
     </div>
 
     <div class="card"> 
@@ -126,7 +126,7 @@
                 quae, nisi recusandae voluptate accusantium.
             </p>
         </div>
-        <button id="read_button">Read more</button>   
+        <button class="ler-mais">Ler mais</button>   
     </div>
 
     <div class="card"> 
@@ -140,135 +140,134 @@
                 quae, nisi recusandae voluptate accusantium.
             </p>
         </div>
-        <button id="read_button">Read more</button>   
+        <button class="ler-mais">Ler mais</button>   
     </div>
   </section>
-    
-    <!--latté-->
-    <div class="title-style">
-        <h1>LATTÉ</h1>
+  <div class="title-style">
+      <h1>EXPRESSO</h1>
+  </div>
+  <section class="expresso">
+    <div class="card"> 
+        <div class="icon">
+            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+        </div>  
+        <div class="content">
+            <h3>Expresso</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
+                quae, nisi recusandae voluptate accusantium.
+            </p>
+        </div>
+        <button class="ler-mais">Ler mais</button>   
     </div>
-    <section class="expresso">
-        <div class="card"> 
-            <div class="icon">
-                <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
-            </div>  
-            <div class="content">
-                <h3>Expresso</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
-                    quae, nisi recusandae voluptate accusantium.
-                </p>
-            </div>
-            <button id="read_button">Read more</button>   
-        </div>
-    
-        <div class="card"> 
-            <div class="icon">
-                <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
-            </div>  
-            <div class="content">
-                <h3>Expresso</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
-                    quae, nisi recusandae voluptate accusantium.
-                </p>
-            </div>
-            <button id="read_button">Read more</button>   
-        </div>
-    
-        <div class="card"> 
-            <div class="icon">
-                <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
-            </div>  
-            <div class="content">
-                <h3>Expresso</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
-                    quae, nisi recusandae voluptate accusantium.
-                </p>
-            </div>
-            <button id="read_button">Read more</button>   
-        </div>
-    
-        <div class="card"> 
-            <div class="icon">
-                <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
-            </div>  
-            <div class="content">
-                <h3>Expresso</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
-                    quae, nisi recusandae voluptate accusantium.
-                </p>
-            </div>
-            <button id="read_button">Read more</button>   
-        </div>
-      </section>
 
-    
-    <!--mocha-->
-    <div class="title-style">
-        <h1>MOCHA</h1>
+    <div class="card"> 
+        <div class="icon">
+            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+        </div>  
+        <div class="content">
+            <h3>Expresso</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
+                quae, nisi recusandae voluptate accusantium.
+            </p>
+        </div>
+        <button class="ler-mais">Ler mais</button>   
     </div>
-    <section class="expresso">
-        <div class="card"> 
-            <div class="icon">
-                <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
-            </div>  
-            <div class="content">
-                <h3>Expresso</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
-                    quae, nisi recusandae voluptate accusantium.
-                </p>
-            </div>
-            <button id="read_button">Read more</button>   
+
+    <div class="card"> 
+        <div class="icon">
+            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+        </div>  
+        <div class="content">
+            <h3>Expresso</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
+                quae, nisi recusandae voluptate accusantium.
+            </p>
         </div>
-    
-        <div class="card"> 
-            <div class="icon">
-                <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
-            </div>  
-            <div class="content">
-                <h3>Expresso</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
-                    quae, nisi recusandae voluptate accusantium.
-                </p>
-            </div>
-            <button id="read_button">Read more</button>   
+        <button class="ler-mais">Ler mais</button>   
+    </div>
+
+    <div class="card"> 
+        <div class="icon">
+            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+        </div>  
+        <div class="content">
+            <h3>Expresso</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
+                quae, nisi recusandae voluptate accusantium.
+            </p>
         </div>
-    
-        <div class="card"> 
-            <div class="icon">
-                <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
-            </div>  
-            <div class="content">
-                <h3>Expresso</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
-                    quae, nisi recusandae voluptate accusantium.
-                </p>
-            </div>
-            <button id="read_button">Read more</button>   
+        <button class="ler-mais">Ler mais</button>   
+    </div>
+  </section>
+
+  <div class="title-style">
+      <h1>EXPRESSO</h1>
+  </div>
+  <section class="expresso">
+    <div class="card"> 
+        <div class="icon">
+            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+        </div>  
+        <div class="content">
+            <h3>Expresso</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
+                quae, nisi recusandae voluptate accusantium.
+            </p>
         </div>
-    
-        <div class="card"> 
-            <div class="icon">
-                <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
-            </div>  
-            <div class="content">
-                <h3>Expresso</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
-                    quae, nisi recusandae voluptate accusantium.
-                </p>
-            </div>
-            <button id="read_button">Read more</button>   
+        <button class="ler-mais">Ler mais</button>   
+    </div>
+
+    <div class="card"> 
+        <div class="icon">
+            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+        </div>  
+        <div class="content">
+            <h3>Expresso</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
+                quae, nisi recusandae voluptate accusantium.
+            </p>
         </div>
-      </section>
-    
+        <button class="ler-mais">Ler mais</button>   
+    </div>
+
+    <div class="card"> 
+        <div class="icon">
+            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+        </div>  
+        <div class="content">
+            <h3>Expresso</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
+                quae, nisi recusandae voluptate accusantium.
+            </p>
+        </div>
+        <button class="ler-mais">Ler mais</button>   
+    </div>
+
+    <div class="card"> 
+        <div class="icon">
+            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+        </div>  
+        <div class="content">
+            <h3>Expresso</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A pariatur nostrum voluptatum neque ipsum quo sapiente. Tempore cum quia ut laudantium possimus aut, excepturi molestias, 
+                quae, nisi recusandae voluptate accusantium.
+            </p>
+        </div>
+        <button class="ler-mais">Ler mais</button>   
+    </div>
+  </section>
+
+  
+
+
 <!--Parte do footer-->
     <footer>
         <div id="footer_content">
