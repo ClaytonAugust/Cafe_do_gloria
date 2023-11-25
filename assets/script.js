@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             cards[index].classList.toggle('active');
             if (cards[index].classList.contains('active')) {
-                button.textContent = 'Read less';
+                button.textContent = 'Ler menos';
             } else {
                 button.textContent = 'Ler Mais';
             }
