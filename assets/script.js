@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (cards[index].classList.contains('active')) {
                 button.textContent = 'Ler menos';
             } else {
-                button.textContent = 'Ler Mais';
+                button.textContent = 'Ler mais';
             }
         });
     });
