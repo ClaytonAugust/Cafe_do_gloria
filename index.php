@@ -3,6 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "cafedb";
+
 // Criar conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -19,6 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["adicionar_review"])) {
     // Inserir a review no banco de dados
     $sql = "INSERT INTO reviews (nome, comentario) VALUES ('$nome', '$comentario')";
     $conn->query($sql);
+
+    // Redirecionar para evitar o reenvio do formulário
+    header("Location: http://localhost/cafe_do_gloria/index.php");
+    exit();
 }
 
 // Se o formulário de remoção de review foi enviado
@@ -28,12 +33,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["remover_review"])) {
     // Remover a review do banco de dados
     $sql = "DELETE FROM reviews WHERE id = $review_id";
     $conn->query($sql);
+
+    // Redirecionar para evitar o reenvio do formulário
+    header("Location: http://localhost/cafe_do_gloria/index.php");
+    exit();
+}
+
+// Se o formulário de edição de review foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["editar_review"])) {
+    $review_id = $_POST["review_id"];
+    $novo_comentario = $_POST["novo_comentario"];
+
+    // Atualizar o comentário no banco de dados
+    $sql = "UPDATE reviews SET comentario = '$novo_comentario' WHERE id = $review_id";
+    $conn->query($sql);
+
+    // Redirecionar para evitar o reenvio do formulário
+    header("Location: http://localhost/cafe_do_gloria/index.php");
+    exit();
 }
 
 // Selecionar todas as reviews do banco de dados
 $sql = "SELECT id, nome, comentario FROM reviews";
 $result = $conn->query($sql);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -99,10 +123,10 @@ $result = $conn->query($sql);
                 <img src="./assets/img/promo.png" alt="Imagem 2"/>
             </div>
             <div class="slide">
-                <img src="./assets/img/bonito.png" alt="Imagem 3"/>
+                <img src="./assets/img/4cafe.png" alt="Imagem 3"/>
             </div>
             <div class="slide">
-                <img src="./assets/img/nãosei.png" alt="Imagem 4"/>
+                <img src="./assets/img/coraçaocafe.png" alt="Imagem 4"/>
             </div>
             <!--Fim Slide images-->
 
@@ -132,7 +156,7 @@ $result = $conn->query($sql);
   <section class="expresso">
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/ExpressoSimples.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Expresso simples</h3>
@@ -155,7 +179,7 @@ $result = $conn->query($sql);
 
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/RistrettoExpresso.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Ristretto</h3>
@@ -173,7 +197,7 @@ $result = $conn->query($sql);
 
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/LungoExpresso.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Lungo</h3>
@@ -192,7 +216,7 @@ $result = $conn->query($sql);
 
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/AmericanoExpresso.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Americano</h3>
@@ -227,7 +251,7 @@ $result = $conn->query($sql);
   <section class="expresso">
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/Caffelatte.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Caffellatte</h3>
@@ -245,7 +269,7 @@ $result = $conn->query($sql);
 
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/AmericanoLatte.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Americano Latte</h3>
@@ -264,7 +288,7 @@ $result = $conn->query($sql);
 
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/LatteMachiato.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Latte Macchiato</h3>
@@ -282,7 +306,7 @@ $result = $conn->query($sql);
 
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/CapuccinoLatte.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Cappuccino</h3>
@@ -306,7 +330,7 @@ $result = $conn->query($sql);
   <section class="expresso">
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/Mocaccino.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Mocaccino</h3>
@@ -326,7 +350,7 @@ $result = $conn->query($sql);
 
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/FrapuccinoCaramelo.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Frapuccino de Caramelo e Baunilha</h3>
@@ -345,7 +369,7 @@ $result = $conn->query($sql);
 
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/FrapuccinoMorangoMocha.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Frapuccino de Morango</h3>
@@ -364,7 +388,7 @@ $result = $conn->query($sql);
 
     <div class="card"> 
         <div class="icon">
-            <img src="./assets/img/hot-chocolate_3948914.png" alt="hotcoffe">
+            <img src="./assets/img/FrapuccinoPacocaMocha.png" alt="hotcoffe">
         </div>  
         <div class="content">
             <h3>Frapuccino de Paçoca</h3>
@@ -382,30 +406,53 @@ $result = $conn->query($sql);
     </div>
   </section>
 <!--Parte de reviews-->
-    <h2>Adicionar Review</h2>
-    <form method="post" action="">
-        Nome: <input type="text" name="nome" required><br>
-        Comentário: <textarea name="comentario" required></textarea><br>
-        <input type="submit" name="adicionar_review" value="Adicionar Review">
-    </form>
-
-    <h2>Reviews</h2>
-    <div class="reviews-container">
-        <?php
-        // Exibir todas as reviews
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-                echo "<div>";
-                echo "<strong>{$row['nome']}</strong>: {$row['comentario']}";
-                echo "<form method='post' action=''><input type='hidden' name='review_id' value='{$row['id']}'>";
-                echo "<input type='submit' name='remover_review' value='Remover'></form>";
-                echo "</div>";
-            }
-        } else {
-            echo "Nenhuma review disponível.";
-        }
-        ?>
+<div id="reviewPopup" class="add-review-form">
+    <div class="add-review-form-content">
+        <h3>Nova Review</h3>
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <form method="post" action="">
+            Nome: <input type="text" name="nome" required><br>
+            Comentário: <textarea name="comentario" required></textarea><br>
+            <input type="submit" name="adicionar_review" value="Adicionar Review">
+        </form>
     </div>
+</div>
+<div class="title-style-reviews">
+    <h1>Reviews</h1>
+</div>
+<button id="openPopupBtn" class="botaoReview">Adicionar Review</button>
+<div class="reviews-container">
+    <?php
+// Exibir todas as reviews
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo "<div class='review-item'>";
+            echo "<strong>{$row['nome']}</strong>: {$row['comentario']}";
+            echo "<form method='post' action=''><input type='hidden' name='review_id' value='{$row['id']}'>";
+            echo "<input type='submit' name='remover_review' value='Remover'>";
+            echo "<input type='button' name='editar_review' onclick='editarReview({$row['id']}, \"{$row['comentario']}\")' value='Editar'>";
+            echo "</form>";
+            echo "</div>";
+        }
+    } else {
+        echo "Nenhuma review disponível.";
+    }
+    ?>
+</div>
+
+<!-- Formulário para editar review -->
+<div class="editar-review-div">
+    <div id="editar-review-form" style="display: none;" class="editar-review">
+        <h3>Editar Review</h3>
+        <form method="post" action="">
+            <input type="hidden" id="review-id-editar" name="review_id">
+            Novo Comentário: <textarea name="novo_comentario" id="novo-comentario" required></textarea><br>
+            <input type="submit" name="editar_review" value="Salvar">
+            <input type="button" name="cancelar_review" onclick="cancelarEdicao()" value="Cancelar">
+        </form>
+    </div>
+</div>
+
 <!--Parte do footer-->
     <footer>
         <div id="footer_content">
@@ -480,6 +527,6 @@ $result = $conn->query($sql);
 </body>
 </html>
 <?php
-// Fechar conexão ao finalizar
-$conn->close();
+    // Fechar conexão ao finalizar
+    $conn->close();
 ?>

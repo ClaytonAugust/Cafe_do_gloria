@@ -31,3 +31,41 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //Fim do script do botão read more
+//add reviews
+function editarReview(reviewId, comentarioAtual) {
+    document.getElementById('review-id-editar').value = reviewId;
+    document.getElementById('novo-comentario').value = comentarioAtual;
+    document.getElementById('editar-review-form').style.display = 'block';
+}
+
+function cancelarEdicao() {
+    document.getElementById('editar-review-form').style.display = 'none';
+}
+//Função para abrir o pop-up
+function openPopup() {
+    document.getElementById('reviewPopup').style.display = 'block';
+}
+
+// Função para fechar o pop-up
+function closePopup() {
+    document.getElementById('reviewPopup').style.display = 'none';
+}
+
+// Event listener para abrir o pop-up ao clicar no botão
+document.getElementById('openPopupBtn').addEventListener('click', openPopup);
+
+//edit reviwes
+function exibirPopupEdicao(id, comentario) {
+    // Preencher os campos do formulário de edição com os dados existentes
+    document.getElementById('review-id-editar').value = id;
+    document.getElementById('novo-comentario').value = comentario;
+
+    // Exibir o pop-up
+    document.getElementById('editar-review-form').style.display = 'block';
+}
+
+function cancelarEdicao() {
+    // Ocultar o pop-up ao clicar em Cancelar
+    document.getElementById('editar-review-form').style.display = 'none';
+}
+
