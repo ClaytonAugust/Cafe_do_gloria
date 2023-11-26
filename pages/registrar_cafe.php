@@ -30,7 +30,7 @@
                     while ($row = $result->fetch_assoc()){
                         echo"<tr>";
                         echo "<td>".$row["id"]."</td>";
-                        echo "<td>".$row["NameDoUsuario"]."</td>";
+                        echo "<td>".$row["nomeDoUsuario"]."</td>";
                         echo "<td>".$row["nomeDoCafe"]."</td>";
                         echo "<td>".$row["descrisaoDoCafe"]."</td>";
                         echo "<td><a href='readByid.php?id='".$row[id].">Info</a>

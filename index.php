@@ -1,3 +1,40 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "cafedb";
+// Criar conexão
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar a conexão
+if ($conn->connect_error) {
+    die("Erro na conexão: " . $conn->connect_error);
+}
+
+// Se o formulário de adição de review foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["adicionar_review"])) {
+    $nome = $_POST["nome"];
+    $comentario = $_POST["comentario"];
+
+    // Inserir a review no banco de dados
+    $sql = "INSERT INTO reviews (nome, comentario) VALUES ('$nome', '$comentario')";
+    $conn->query($sql);
+}
+
+// Se o formulário de remoção de review foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["remover_review"])) {
+    $review_id = $_POST["review_id"];
+
+    // Remover a review do banco de dados
+    $sql = "DELETE FROM reviews WHERE id = $review_id";
+    $conn->query($sql);
+}
+
+// Selecionar todas as reviews do banco de dados
+$sql = "SELECT id, nome, comentario FROM reviews";
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -22,9 +59,6 @@
     <!-- Fim container logo -->
 
     <!-- Começo menu -->
-
-
-
     <div class="menu">
         
         <ul>
@@ -347,6 +381,31 @@
         <button class="ler-mais">Ler mais</button>   
     </div>
   </section>
+<!--Parte de reviews-->
+    <h2>Adicionar Review</h2>
+    <form method="post" action="">
+        Nome: <input type="text" name="nome" required><br>
+        Comentário: <textarea name="comentario" required></textarea><br>
+        <input type="submit" name="adicionar_review" value="Adicionar Review">
+    </form>
+
+    <h2>Reviews</h2>
+    <div class="reviews-container">
+        <?php
+        // Exibir todas as reviews
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo "<div>";
+                echo "<strong>{$row['nome']}</strong>: {$row['comentario']}";
+                echo "<form method='post' action=''><input type='hidden' name='review_id' value='{$row['id']}'>";
+                echo "<input type='submit' name='remover_review' value='Remover'></form>";
+                echo "</div>";
+            }
+        } else {
+            echo "Nenhuma review disponível.";
+        }
+        ?>
+    </div>
 <!--Parte do footer-->
     <footer>
         <div id="footer_content">
@@ -420,3 +479,7 @@
     <script src="./assets/script.js"></script>
 </body>
 </html>
+<?php
+// Fechar conexão ao finalizar
+$conn->close();
+?>

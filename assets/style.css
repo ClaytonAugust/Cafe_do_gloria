@@ -346,6 +346,12 @@ body::-moz-scrollbar-thumb {
 .card.active .content::before{
     visibility: hidden;
 }
+.reviews-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
 /* Estilo do footer */
 footer {
     background-color: #452d1d;
