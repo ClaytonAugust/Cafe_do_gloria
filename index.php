@@ -68,9 +68,9 @@ $result = $conn->query($sql);
     <link rel="stylesheet" href="./assets/style.css">
     
 </head>
-<body>
+<body class="main">
     <!-- Começo container logo -->
-    <header>
+    <header class="mainHeader">
         <div class="container-logo">
             <div class="logo-imagem">
                 <img src="./assets/img/CDG.png">
@@ -86,12 +86,12 @@ $result = $conn->query($sql);
     <div class="menu">
         
         <ul>
-            <li class="active"><a href="#"><img src="./assets/img/casa.png", class="fa">Home</a></li>
+            <li><a href="http://localhost/cafe_do_gloria/index.php"><img src="./assets/img/casa.png", class="fa">Home</a></li>
             <li><a href="#"><img src="./assets/img/xicara-de-cafe.png", class="fa">Contato</a></li>
-            <li><a href="#"><img src="./assets/img/xicara-de-cafe.png", class="fa">Registrar</a></li>
+            <li><a href="http://localhost/cafe_do_gloria/pages/register.php"><img src="./assets/img/xicara-de-cafe.png", class="fa">Registrar</a></li>
             <li><a href="#"><img src="./assets/img/xicara-de-cafe.png", class="fa">Sócios</a></li>
             <li><a href="#"><img src="./assets/img/shopping-cart.png", class="fa">Compras</a></li>
-            <li><a href="#"><img src="./assets/img/enter.png", class="fa">Login</a></li>
+            <li><a href="http://localhost/cafe_do_gloria/pages/login.php"><img src="./assets/img/enter.png", class="fa">Login</a></li>
         </ul>
     </div>
     <div class="menu-btn">&#9776; Menu</div>
@@ -454,7 +454,7 @@ $result = $conn->query($sql);
 </div>
 
 <!--Parte do footer-->
-    <footer>
+    <footer class="footerMain">
         <div id="footer_content">
             <div id="footer_contacts">
                 <div class="logo-footerimagem">

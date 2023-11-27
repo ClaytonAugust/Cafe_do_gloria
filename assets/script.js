@@ -29,7 +29,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const lerMaisButtons = document.querySelectorAll('.ler-mais-vilian');
+    const cards = document.querySelectorAll('.card-vilian');
 
+    lerMaisButtons.forEach((button, index) => {
+        button.addEventListener('click', function() {
+            cards[index].classList.toggle('active');
+            if (cards[index].classList.contains('active')) {
+                button.textContent = 'Ler menos';
+            } else {
+                button.textContent = 'Ler mais';
+            }
+        });
+    });
+});
 //Fim do script do botão read more
 //add reviews
 function editarReview(reviewId, comentarioAtual) {
@@ -68,4 +82,3 @@ function cancelarEdicao() {
     // Ocultar o pop-up ao clicar em Cancelar
     document.getElementById('editar-review-form').style.display = 'none';
 }
-

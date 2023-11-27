@@ -21,8 +21,13 @@ $sql = "
         nome VARCHAR(50),
         comentario VARCHAR(255)
     );
+    CREATE TABLE IF NOT EXISTS usuarios (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        username VARCHAR(50) NOT NULL,
+        senha VARCHAR(255) NOT NULL
+    );
+    
 ";
-
 // Executa o script SQL
 if ($conn->multi_query($sql) === TRUE) {
     echo "Banco de dados e tabela criados com sucesso.";

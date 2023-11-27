@@ -1,5 +1,5 @@
 /* Corpo da página */
-body {
+.main{
     background-color: #ac9a80bb;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@ body {
     font-family: 'Playpen Sans', cursive;
 }
 /* Estilo do header */
-header {
+.mainHeader {
     width: 100%;
     background-color: #452d1d;
     display: flex;
@@ -73,29 +73,29 @@ header {
     }
 }
 /* Estilizando a barra de rolagem para navegadores WebKit */
-body::-webkit-scrollbar {
+.main::-webkit-scrollbar {
     width: 12px; /* Largura da barra de rolagem */
 }
 
-body::-webkit-scrollbar-track {
+.main::-webkit-scrollbar-track {
     background: rgba(194, 138, 35, 0.377); /* Cor da trilha da barra de rolagem */
 }
 
-body::-webkit-scrollbar-thumb {
+.main::-webkit-scrollbar-thumb {
     background-color: #452d1d; /* Cor da alça (o "puxador" da barra de rolagem) */
     border-radius: 6px; /* Raio da borda da alça */
 }
 
 /* Estilizando a barra de rolagem para navegadores Firefox */
-body::-moz-scrollbar {
+.main::-moz-scrollbar {
     width: 12px;
 }
 
-body::-moz-scrollbar-track {
+.main::-moz-scrollbar-track {
     background: #f1f1f1;
 }
 
-body::-moz-scrollbar-thumb {
+.main::-moz-scrollbar-thumb {
     background-color: #452d1d;
     border-radius: 6px;
 }
@@ -349,7 +349,7 @@ body::-moz-scrollbar-thumb {
 }
 
 /* Estilo do footer */
-footer {
+.footerMain {
     background-color: #452d1d;
     color: #fff;
     padding: 30px 0;
@@ -695,4 +695,213 @@ input[name="editar_review"]{
 .editar-review textarea:focus {
     outline: none;
     border-color: #452d1d; /* Define a cor da borda ao focar na textarea */
+}
+/*Página Secreta*/
+body.vilian {
+    background-color: #1a1a1a;
+    color: #8f3ac0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Remova as margens padrão para evitar espaços extras */
+    overflow-x: hidden; /* Evite a barra de rolagem horizontal ao adicionar bordas laterais */
+}
+.villianHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #2e2e2e;
+}
+.container-logo-vilian {
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+}
+.vilianMenu {
+    background-color: #333;
+    padding: 10px;
+    justify-content: center;
+    padding: 15px 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.vilianMenu ul {
+    display: flex;
+    list-style: none;
+}
+
+.vilianMenu ul li {
+    margin: 0 20px;
+}
+
+.vilianMenu ul li a {
+    color: #8f3ac0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.vilianMenu ul li a:hover{
+    color: #36e67f;
+}
+.title-style-vilian {
+    text-align: center;
+    margin: 20px 0;
+}
+.expressoVilian{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 70px;
+    padding-bottom: 30px;
+    text-align: center; /* Centraliza os cards no eixo horizontal */
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 60px;
+}
+.card-vilian {
+    background-color: #333;
+    color: rgb(152, 33, 182);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgb(122, 30, 165);
+    margin: auto;
+}
+.card-vilian::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border:20px solid transparent;
+}
+.card-vilian h3 {
+    margin-bottom: 10px;
+}
+.content-vilian{
+    height: 215px;
+    overflow: hidden;
+    position: relative;
+}
+.content-vilian::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+/*estilo do titulo do card*/
+.content-vilian h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    position: relative;
+    color: #7415a0;
+}
+/*detalhe do card*/
+.content-vilian h3::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background-color: #47289c;
+    bottom: -3px;
+    border-radius: 100px;
+}
+/*cor da descrisão do card*/
+.content-vilian p{
+    color: rgb(29, 153, 70);
+}
+.ler-mais-vilian {
+    background-color: rgba(91, 172, 44, 0.952);
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.ler-mais-vilian:hover{
+    background: transparent;
+    color: rgba(91, 172, 44, 0.952);
+    transition: all 0.2s ease-in-out;
+}
+.card-vilian.active .content-vilian{
+    height: auto;
+}
+.card-vilian.active .content-vilian::before{
+    visibility: hidden;
+}
+
+.footerVilian {
+    background-color: #303030;
+    color:#6f941a;
+    padding: 30px 0;
+}
+
+.footerVilian a {
+    color: rgb(165, 45, 235);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.logo-footerimagem img {
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+}
+
+.footer-list-vilian h3 {
+    color: rgb(142, 29, 207);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footerVilian a:hover {
+    color: rgb(44, 187, 39);
+}
+#footer_social_media{
+    display: flex;
+    gap: 1rem;
+    margin-top: 5px;
+}
+#footer_social_media img{
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: all 0.4s;
+}
+#footer_social_media img:hover{
+    opacity: 0.8;
+}
+
+#footer_subscribe_vilian input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#footer_subscribe_vilian button {
+    background-color: #82e898;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#footer_subscribe_vilian button img {
+    width: 20px;
+}
+
+#footer_copyright_vilian {
+    text-align: center;
+    background-color: #4c2299;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 14px;
 }
