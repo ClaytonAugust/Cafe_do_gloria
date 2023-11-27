@@ -117,16 +117,16 @@ $result = $conn->query($sql);
 
             <!--Slide images-->
             <div class="slide first">
-                <img src="./assets/img/datos-sobre-el-cafe.png" alt="Imagem 1"/>
+                <img src="./assets/img/AmericanoCafeCarroselPromo.png" alt="Imagem 1"/>
             </div>
             <div class="slide">
-                <img src="./assets/img/promo.png" alt="Imagem 2"/>
+                <img src="./assets/img/FrapuccinoPacocaCarroselPromo.png" alt="Imagem 2"/>
             </div>
             <div class="slide">
-                <img src="./assets/img/4cafe.png" alt="Imagem 3"/>
+                <img src="./assets/img/AmericanoExpressoCarroselPromo.png" alt="Imagem 3"/>
             </div>
             <div class="slide">
-                <img src="./assets/img/coraçaocafe.png" alt="Imagem 4"/>
+                <img src="./assets/img/LatteMachiatoCarroselPromo.png" alt="Imagem 4"/>
             </div>
             <!--Fim Slide images-->
 

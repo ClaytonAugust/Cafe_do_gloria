@@ -11,6 +11,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Erro na conexão: " . $conn->connect_error);
 }
+//Inicializa a mensagem de erro
+$erro = "";
 
 // Verificar se o formulário foi enviado
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -27,12 +29,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['user_id'] = $id;
         header("Location: pagina_secreta.php");
     } else {
-        echo "Login inválido. Tente novamente.";
+        $erro = "Login inválido. Tente novamente.";
     }
 
     $stmt->close();
 }
-
 $conn->close();
 ?>
 
@@ -40,11 +41,14 @@ $conn->close();
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body>
-    <h2>Login</h2>
-    <form method="post" action="login.php" >
+<body class="login">
+    <form method="post" action="login.php">
+        <h2>Login</h2>
+        <?php if ($erro != "") : ?>
+            <div class="erro"><?php echo $erro; ?></div>
+        <?php endif; ?>
         <label>Username:</label>
         <input type="text" name="username" required>
         <br>
@@ -52,7 +56,7 @@ $conn->close();
         <input type="password" name="senha" required>
         <br>
         <input type="submit" value="Login">
+        <a href="http://localhost/cafe_do_gloria/index.php">Voltar à Página Principal</a>
     </form>
-    <a href="http://localhost/cafe_do_gloria/index.php">Voltar à Página Principal</a>
 </body>
 </html>

@@ -31,14 +31,11 @@ if (!isset($_SESSION['user_id'])) {
 
     <!-- Começo menu -->
     <div class="vilianMenu">
-        
         <ul>
             <li><a href="http://localhost/cafe_do_gloria/index.php"><img src="../assets/img/charada.png", class="vilianMenuButton">Home</a></li>
             <li><a href="#"><img src="../assets/img/charada.png", class="vilianMenuButton">Contato</a></li>
             <li><a href="http://localhost/cafe_do_gloria/pages/register.php"><img src="../assets/img/charada.png", class="vilianMenuButton">Registrar</a></li>
-            <li><a href="#"><img src="../assets/img/charada.png", class="vilianMenuButton">Sócios</a></li>
-            <li><a href="#"><img src="../assets/img/charada.png", class="vilianMenuButton">Compras</a></li>
-            <li><a href="http://localhost/cafe_do_gloria/pages/login.php"><img src="../assets/img/charada.png", class="vilianMenuButton">Login</a></li>
+            <li><a href="http://localhost/cafe_do_gloria/index.php"><img src="../assets/img/charada.png", class="vilianMenuButton">Logout</a></li>
         </ul>
     </div>
     <!-- Fim menu -->
@@ -111,16 +108,15 @@ if (!isset($_SESSION['user_id'])) {
 
     <div class="card-vilian"> 
         <div class="icon">
-            <img src="../assets/img/LungoExpresso.png" alt="hotcoffe">
+            <img src="../assets/img/Charadacoffer.png" alt="hotcoffe">
         </div>  
         <div class="content-vilian">
-            <h3>PinguinCoffer</h3>
+            <h3>CharadaCoffer</h3>
             <p>
-                É um café bem nojento, provalvemente você vai ter a maior dor de barriga
-                da sua vida ou vai morrer contaminado.
+                É um café que vai fazer com que você resolva charadas com facilidade.
                 <p>40-45ml de café</p>
-                <p>Ele odeia a familia Wayne, se entregar a compania Wayne para ele, talvez você vai ter um lugar
-                    bem seguro no esgoto de Gothan City
+                <p>Ele adora criar um quebra cabeça investigativo para o Batman e
+                    levar o Batman para uma armadilha talvez?
                 </p>
         </div>
         <button class="ler-mais-vilian">Ler mais</button>   
@@ -128,7 +124,7 @@ if (!isset($_SESSION['user_id'])) {
 
     <div class="card-vilian"> 
         <div class="icon">
-            <img src="../assets/img/AmericanoExpresso.png" alt="hotcoffe">
+            <img src="../assets/img/HarleyQuinnViloes.png" alt="hotcoffe">
         </div>  
         <div class="content-vilian">
             <h3>HarleyquinCoffer</h3>

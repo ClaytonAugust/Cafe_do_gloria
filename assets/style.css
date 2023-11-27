@@ -905,3 +905,90 @@ body.vilian {
     padding: 10px 0;
     font-size: 14px;
 }
+body.login {
+    font-family: 'Arial', sans-serif;
+    background-color: #361f10;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.login form {
+    background-color: #5e432e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+.login h2 {
+    text-align: center;
+    color: #c59458;
+}
+
+.login label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e8ba82;
+}
+
+.login input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #452d1d;
+    border-radius: 4px;
+    background-color: #452d1d;
+    color: #e8ba82;
+}
+.login input[name='username']:focus{
+    outline: none;
+    border-color: #452d1d;
+}
+.login input[name='senha']:focus{
+    outline: none;
+    border-color: #452d1d;
+}
+.login input[type="submit"] {
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: #452d1d;
+    color: #c59458;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.login input[type="submit"]:hover {
+    background: transparent;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.login a {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    color: #c0863e;
+    text-decoration: none;
+}
+
+.login a:hover {
+    color: #ffffff;
+}
+.login .erro {
+    background-color: #7a1d1d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+}
